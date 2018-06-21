@@ -24,7 +24,8 @@
         <activity android:name=".PerfilActivity" />
         <activity android:name=".ActualizarActivity" />
         <activity android:name=".PedidoActivity" />
-        <activity android:name=".DescripcionActivity"></activity>
+        <activity android:name=".DescripcionActivity" />
+        <activity android:name=".EliminarActivity"></activity>
     </application>
 
 </manifest>

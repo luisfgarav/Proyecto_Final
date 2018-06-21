@@ -122,6 +122,7 @@ public class ActualizarActivity extends AppCompatActivity {
                 }
                 );
                 x.add(peticion6);
+                finish();
             }
         });
     }

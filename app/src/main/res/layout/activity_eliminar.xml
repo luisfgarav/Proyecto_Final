@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    tools:context="com.example.ppc.proyecto_final.EliminarActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Producto: "
+        android:id="@+id/ElProducto"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Subtotal: "
+        android:id="@+id/ElSubtotal"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ELIMINAR PRODUCTO"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/BtEliminar"/>
+
+</LinearLayout>

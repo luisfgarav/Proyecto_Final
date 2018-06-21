@@ -176,6 +176,7 @@ public class DetalleActivity extends AppCompatActivity {
                 );
                 RequestQueue x4= Volley. newRequestQueue(DetalleActivity.this);
                 x4.add(peticion4);
+                finish();
             }
         });
 

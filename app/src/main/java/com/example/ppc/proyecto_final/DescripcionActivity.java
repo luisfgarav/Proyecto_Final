@@ -59,6 +59,7 @@ public class DescripcionActivity extends AppCompatActivity {
                         descripcion.setSubtotal(jsonObject.getString("subtotal"));
                         descripcion.setUbicacion(jsonObject.getString("ubicacion"));
                         descripcion.setPrecio_producto(jsonObject.getString("precio_producto"));
+                        descripcion.setClave(jsonObject.getString("clave"));
 
                         lstDescripcion.add(descripcion);
                     } catch (JSONException e) {

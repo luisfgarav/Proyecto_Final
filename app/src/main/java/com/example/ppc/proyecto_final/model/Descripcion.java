@@ -11,17 +11,19 @@ public class Descripcion {
     private String subtotal;
     private String ubicacion;
     private String precio_producto;
+    private String clave;
 
     public Descripcion() {
     }
 
 
-    public Descripcion(String producto, String cantidad, String subtotal, String ubicacion, String precio_producto) {
+    public Descripcion(String producto, String cantidad, String subtotal, String ubicacion, String precio_producto,String clave) {
         this.producto = producto;
         this.cantidad = cantidad;
         this.subtotal = subtotal;
         this.ubicacion = ubicacion;
         this.precio_producto = precio_producto;
+        this.clave = clave;
     }
 
     public String getProducto() {
@@ -44,6 +46,10 @@ public class Descripcion {
         return precio_producto;
     }
 
+    public String getClave() {
+        return clave;
+    }
+
     public void setProducto(String producto) {
         this.producto = producto;
     }
@@ -62,5 +68,9 @@ public class Descripcion {
 
     public void setPrecio_producto(String precio_producto) {
         this.precio_producto = precio_producto;
+    }
+
+    public void setClave(String clave){
+        this.clave = clave;
     }
 }
