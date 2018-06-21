@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.ppc.proyecto_final.PerfilActivity;
 import com.example.ppc.proyecto_final.ProductosAc;
 import com.example.ppc.proyecto_final.R;
 
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         bperfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent segunda= new Intent(MainActivity.this,PerfilActivity.class);
+                startActivity(segunda);
             }
         });
 

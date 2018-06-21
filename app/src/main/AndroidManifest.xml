@@ -20,7 +20,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ProductosAc" />
-        <activity android:name=".DetalleActivity"></activity>
+        <activity android:name=".DetalleActivity" />
+        <activity android:name=".PerfilActivity" />
+        <activity android:name=".ActualizarActivity"></activity>
     </application>
 
 </manifest>

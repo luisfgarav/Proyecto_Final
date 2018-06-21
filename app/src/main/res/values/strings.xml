@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Ameizon</string>
+    <string-array name="Distribuidor">
+        <item>PaquetExpress</item>
+        <item>DHL</item>
+        <item>EnviosDH</item>
+        <item>Pakmail</item>
+        <item>Fedex</item>
+    </string-array>
 </resources>

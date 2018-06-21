@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Pedidos"
+            android:id="@+id/BotonPedidos"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ACTUALIZAR DATOS"
+            android:id="@+id/BotonActualizar"
+            />
+
+        <ImageView
+            android:id="@+id/perfilimagen"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Nombre: "
+            android:id="@+id/perfilnombre"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Apellido: "
+            android:id="@+id/perfilapellido"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Sexo: "
+            android:id="@+id/perfilsexo"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Celular: "
+            android:id="@+id/perfilcelular"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Municipio: "
+            android:id="@+id/perfilmunicipio"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Dirección: "
+            android:id="@+id/perfildireccion"
+            android:layout_marginLeft="40dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="Distribuidor:"
+                android:id="@+id/perfildistribuidor"
+                android:layout_marginLeft="40dp"
+                />
+            <Spinner
+                android:id="@+id/selecicion"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:entries="@array/Distribuidor"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
