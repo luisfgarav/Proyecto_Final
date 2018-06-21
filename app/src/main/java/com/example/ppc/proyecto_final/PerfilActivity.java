@@ -244,5 +244,13 @@ public class PerfilActivity extends AppCompatActivity {
                 startActivity(segunda);
             }
         });
+
+        btPedidos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent segunda= new Intent(PerfilActivity.this,PedidoActivity.class);
+                startActivity(segunda);
+            }
+        });
     }
 }

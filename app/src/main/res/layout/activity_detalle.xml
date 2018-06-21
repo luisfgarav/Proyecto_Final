@@ -44,13 +44,31 @@
                     android:hint="Precio:" />
 
             </LinearLayout>
-            <Button
-                android:layout_width="120dp"
-                android:layout_height="60dp"
-                android:text="COMPRAR"
-                android:id="@+id/comprar"
-                />
-
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cantidad: "/>
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cantidad"
+                        android:text="1"/>
+                </LinearLayout>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="COMPRAR"
+                    android:id="@+id/comprar"
+                    />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

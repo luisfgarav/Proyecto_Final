@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ import java.util.List;
 
 public class DetalleActivity extends AppCompatActivity {
     public TextView tvproveedor,tvestado,tvprecio;
+    public EditText etcantidad;
     private JsonArrayRequest request;
     private RequestQueue requestQueue;
     public Button btComprar;
@@ -43,6 +45,8 @@ public class DetalleActivity extends AppCompatActivity {
         tvestado=findViewById(R.id.estado);
         tvprecio=findViewById(R.id.precio);
         btComprar=findViewById(R.id.comprar);
+        etcantidad=findViewById(R.id.cantidad);
+
 
 
         String url  = "http://192.168.10.101/Proyecto/Consulta_provicion.php?clave="+clave;
@@ -157,7 +161,7 @@ public class DetalleActivity extends AppCompatActivity {
         btComprar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url4  = "http://192.168.10.101/Proyecto/Insertar_detalle.php?clave_producto="+clave_provicion+"&cantidad=1&precio_producto="+precio_p;
+                String url4  = "http://192.168.10.101/Proyecto/Insertar_detalle.php?clave_producto="+clave_provicion+"&cantidad="+etcantidad.getText().toString()+"&precio_producto="+precio_p;
                 JsonObjectRequest peticion4 = new JsonObjectRequest(
                         Request.Method.GET,
                         url4,
